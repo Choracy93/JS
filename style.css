@@ -1,0 +1,45 @@
+#sapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	  position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  #sapper .cell {
+    margin: 0;
+	  padding: 0;
+    box-sizing: border-box;
+    height: 10;
+    width: 10;
+    background: silver;
+    border: 3px solid rgb(15, 14, 14);
+    font-size: 50px;
+    text-align: center;
+    cursor: default;
+  }
+
+#sapper .text {
+  text-align: center;
+  position: center;
+}
+
+
+#timer{
+  background: silver;
+  color: #000;
+  border: 3px solid rgb(15, 14, 14);
+  height: 30px;
+  width: 100px;
+  margin: 250x auto;
+  text-align: center;
+  position: center;
+}
+  
+  #sapper .cell.explosion { background: rgb(20, 5, 5); }
+  #sapper .cell.flag { 
+    background-image: url('115.png');
+   }
+  #sapper .cell.show { background: rgb(182, 158, 20); }
+  
+  body, html { font-family: 'Times New Roman', Times, serif; }
