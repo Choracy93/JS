@@ -10,8 +10,10 @@
     margin: 0;
 	  padding: 0;
     box-sizing: border-box;
-    height: 10;
-    width: 10;
+    height: 60px;
+    min-height: 30px;
+    width: 30px;
+    min-width: 30px;
     background: silver;
     border: 3px solid rgb(15, 14, 14);
     font-size: 50px;
