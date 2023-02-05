@@ -162,6 +162,7 @@ let bombs = {
         setTimeout(() => {
           alert("Bomba wybuchła!!!");
           bombs.reset();
+          clearTimeout(update);
         }, 1);
       }
       
