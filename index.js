@@ -29,10 +29,10 @@ let bombs = {
                   msLeft = timeUp - (+new Date);
                   if ( msLeft < 1000 ) {
                       // element.innerHTML = "Koniec czasu";
-                      alert("Koniec czasu!");
                       let sound = new Audio(   
                         src="OOPS.WAV");   
                                 sound.play();
+                      alert("Koniec czasu!");
                       bombs.reset();
                   } else {
                       time = new Date( msLeft );
@@ -45,6 +45,7 @@ let bombs = {
           
               piece = document.getElementById( timepiece );
               timeUp = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+              // clearTimeout(timeUp);
               update();
           }
           
@@ -155,10 +156,10 @@ let bombs = {
   
       if (!bombs.board[line][col].y && bombs.board[line][col].z) {
         cell.classList.add("explosion");
+        let sound = new Audio(   
+          src="OOPS.WAV");   
+                  sound.play();
         setTimeout(() => {
-            let sound = new Audio(   
-                src="OOPS.WAV");   
-                        sound.play();
           alert("Bomba wybuchła!!!");
           bombs.reset();
         }, 1);
@@ -224,10 +225,10 @@ let bombs = {
         }
   
         if (bombs.xCell == bombs.total) {
-          alert("Zwycięstwo!");
           let soundV = new Audio(   
             src="VICTORY.WAV");   
                     soundV.play();
+          alert("Zwycięstwo!");
           bombs.reset();
         }
       }

@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     flex-direction: row;
 	  position: relative;
-    margin-bottom: 2rem;
+    border: 2px solid silver;
+    margin-bottom: 10px;
+    padding: 15px;
   }
   
   #sapper .cell {
@@ -19,6 +21,10 @@
     font-size: 50px;
     text-align: center;
     cursor: default;
+    box-shadow: inset 4px 4px 7px #c4bcbc, inset -3px -3px 5px #9e9797;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
   }
 
 #sapper .text {
