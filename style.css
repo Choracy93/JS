@@ -8,6 +8,8 @@
     padding: 15px;
   }
   
+  #sapper .cell.explosion { background: rgb(15, 3, 3); }
+
   #sapper .cell {
     margin: 0;
 	  padding: 0;
@@ -20,7 +22,7 @@
     border: 3px solid rgb(15, 14, 14);
     font-size: 50px;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     box-shadow: inset 4px 4px 7px #c4bcbc, inset -3px -3px 5px #9e9797;
     transition-property: background-color, box-shadow;
     transition-duration: 1s;
@@ -44,7 +46,7 @@
   position: center;
 }
   
-  #sapper .cell.explosion { background: rgb(20, 5, 5); }
+  /* #sapper .cell.explosion { background: rgb(15, 3, 3); } */
   #sapper .cell.flag { 
     background-image: url('115.png');
    }
